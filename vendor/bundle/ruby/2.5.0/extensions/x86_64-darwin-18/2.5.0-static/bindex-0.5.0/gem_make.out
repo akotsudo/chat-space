@@ -1,0 +1,15 @@
+current directory: /Users/kondouatsushi/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/Users/kondouatsushi/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190113-455-1x7mxia.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kondouatsushi/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/kondouatsushi/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/kondouatsushi/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190113-455-skqg0t/bindex
