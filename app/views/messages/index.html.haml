@@ -1,3 +1,20 @@
+.chat-main
+  .chat-main__top
+    %p.group-name グループ名
+    %p.edit Edit
+    %p.group-member taro
+  .chat-main__middle
+    %p.chat-name member
+    %p.chat-time 時間
+    %p.chat-comment コメント
+  .chat-main__under
+    %form
+      %input.text-area{:placeholder => "type a message"}/
+      %input#icon.button{:type => "file"}/
+      %input.send{:type => "submit", :value => "Send"}/
+      %span.icom
+        %label{:for => "icon"}
+
 
 .chat-sideber
   .chat-sideber__top

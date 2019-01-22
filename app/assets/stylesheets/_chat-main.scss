@@ -1,0 +1,22 @@
+@mixin chat-main(){
+  width:calc((100vw - 300px));
+  margin:0px 0px 0px 300px;
+  background-color:#FFFFFF;
+}
+.chat-main {
+  @include chat-main();
+  &__top {
+    color:#333333;
+    box-sizing:border-box;
+    padding:0px 0px 0px 40px;
+    border-bottom-color: #eeeeee;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    .group-name{
+      font-size:20px;
+      padding:35px 0px 5px 0px;
+      margin:0px;
+    }
+
+  }
+}
