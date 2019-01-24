@@ -1,11 +1,26 @@
+.chat-sideber
+  .chat-sideber__top
+    Log in group名
+    = fa_icon 'edit', class:'colorSet'
+    = fa_icon 'cog', class:'colorSet'
+  .chat-sideber__under
+    %p.group-name Test Gr.1
+    %p.group-message hello
+    %p.group-name Test Gr.2
+    %p.group-message fine
+    %p.group-name Test Gr.3
+    %p.group-message fight!
 .chat-main
   .chat-main__top
     %p.group-name グループ名
     %p.edit Edit
-    %p.group-member taro
+    %p.group-member chatspace
   .chat-main__middle
-    %p.chat-name member
-    %p.chat-time 時間
+    %p.chat-name user1
+    %p.chat-time 2019/1/21
+    %p.chat-comment コメント
+    %p.chat-name user2
+    %p.chat-time 2019/1/22
     %p.chat-comment コメント
   .chat-main__under
     %form
@@ -15,12 +30,3 @@
       %span.icom
         %label{:for => "icon"}
 
-
-.chat-sideber
-  .chat-sideber__top
-    Log in group名
-  .chat-sideber__under
-    %p.group-name Test Gr.1
-    %p.group-message hello
-    %p.group-name Test Gr.1
-    %p.group-message fine
