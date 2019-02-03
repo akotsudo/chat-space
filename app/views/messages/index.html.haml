@@ -14,10 +14,13 @@
       %input.send{:type => "submit", :value => "Send"}/
       %span.icon
         %label{:for => "icon"}
+        = fa_icon 'camera' ,class:'colorSet'
 
 .chat-sideber
   .chat-sideber__top
     ログインユーザーの表示
+    = fa_icon 'edit', class:'colorSet'
+    = fa_icon 'cog', class:'colorSet'
   .chat-sideber__under
     %p.group-name Test Group1
     %p.group-message Hello!
