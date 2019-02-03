@@ -24,5 +24,15 @@
   &__under {
     background-color: #2f3e51;
     height:100vh;
+    .group-name {
+      font-size:15px;
+      padding:20px 20px 5px;
+      margin:0px;
+    }
+    .group-message{
+      font-size:11px;
+      padding:0px 20px 20px;
+      margin:0px;
+    }
   }
 }
