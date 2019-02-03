@@ -3,3 +3,14 @@
   margin:0px 0px 0px 300px;
   background-color: #FFFFFF;
 }
+.chat-main {
+  @include chat-main();
+  &__top {
+    color:#333333;
+    box-sizing:border-box;
+    padding:0px 0px 0px 40px;
+    border-bottom-color: #eeeeee;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+}
