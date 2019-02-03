@@ -24,14 +24,14 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |name|string|null:false|
 |e-mail|string|null:false, unique: true|
 |password|string|null:false, unique: true|
 
 ### Association
--belongs_to :memebers
--belongs_to :message
+- has_many :memebers
+- has_many :messages
+- has_many :groups, through: :members
 
 ## messageテーブル
 
