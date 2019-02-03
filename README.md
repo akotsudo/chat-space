@@ -13,12 +13,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
 |name|string|null: false|
 
 ### Association
-- has_many :member
-- has_many :message
+- has_many :members
+- has_many :messages
+- has_many :user, through: :memebers
 
 ## userテーブル
 
