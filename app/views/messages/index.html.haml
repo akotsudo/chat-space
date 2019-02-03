@@ -7,4 +7,11 @@
     %p.chat-name ichiro
     %p.chat-time 2019/2/3 17:00
     %p.chat-comment コメント
+  .chat-main__under
+    %form
+      %input.text-area{:placeholder => "type a message"}/
+      %input#icon.button{:type => "file"}/
+      %input.send{:type => "submit", :value => "Send"}/
+      %span.icon
+        %label{:for => "icon"}
 
