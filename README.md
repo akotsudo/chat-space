@@ -37,17 +37,14 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|message_id|integer|null: false, foreign_key: true|
 |body|text|
 |image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
-|members_id|integer|null: false, foreign_key: true|
 |timestanp|datetime|null: false|
 
 ###Association
-- has_many :group
-- has_many :user
-- has_many :members
+- belongs_to :group
+- belongs_to :user
 
 
