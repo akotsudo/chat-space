@@ -5,3 +5,21 @@
   margin:0px;
   padding: 0px;
 }
+.chat-sideber {
+  @include chat-sideber();
+      .colorSet {
+        color:white;
+        background-color: #253141;
+        margin-left:46.8px;
+      }
+  &__top {
+    background-color: #253141;
+    padding:35px 20px 35px 20px;
+    font-size:16px;
+    font-weight:bold;
+    margin:0px;
+    display:inline-block;
+    border-bottom-width:0px;
+  }
+
+}
