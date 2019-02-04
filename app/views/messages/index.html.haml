@@ -1,11 +1,27 @@
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title ChatSpace
-    = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-
-    = yield
+.chat-sideber
+  .chat-sideber__top
+    ログインユーザーの表示
+    = fa_icon 'edit', class:'colorSet'
+    = fa_icon 'cog', class:'colorSet'
+  .chat-sideber__under
+    %p.group-name Test Group1
+    %p.group-message Hello!
+    %p.group-name Test Group2
+    %p.group-message Nice!
+.chat-main
+  .chat-main__top
+    %p.group-name グループ名
+    %p.edit Edit
+    %p.group-member Taro
+  .chat-main__middle
+    %p.chat-name ichiro
+    %p.chat-time 2019/2/3 17:00
+    %p.chat-comment コメント
+  .chat-main__under
+    %form
+      %input.text-area{:placeholder => "type a message"}/
+      %input#icon.button{:type => "file"}/
+      %input.send{:type => "submit", :value => "Send"}/
+      %span.icon
+        %label{:for => "icon"}
+        = fa_icon 'camera' ,class:'colorSet'
