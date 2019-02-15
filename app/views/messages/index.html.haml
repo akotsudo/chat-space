@@ -1,13 +1,4 @@
-.chat-sideber
-  .chat-sideber__top
-    ログインユーザーの表示
-    = fa_icon 'edit', class:'colorSet'
-    = fa_icon 'cog', class:'colorSet'
-  .chat-sideber__under
-    %p.group-name Test Group1
-    %p.group-message Hello!
-    %p.group-name Test Group2
-    %p.group-message Nice!
+= render 'shared/side_bar'
 .chat-main
   .chat-main__top
     %p.group-name グループ名
@@ -25,4 +16,5 @@
       %span.icon
         %label{:for => "icon"}
         = fa_icon 'camera' ,class:'colorSet'
+
 
