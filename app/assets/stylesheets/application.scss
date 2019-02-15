@@ -1,7 +1,11 @@
-@import "./reset";
-@import "_chat-main";
-@import "_chat-sideber";
 @import "font-awesome";
-@import "modules/user";
+@import "chat-main";
 @import "config/colors";
+@import "config/size";
+@import "config/reset";
+@import "mixin/clearfix";
+@import "modules/user";
 @import "modules/flash";
+@import "modules/group";
+@import "modules/chat";
+@import "modules/side_bar";
