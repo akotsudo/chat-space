@@ -4,6 +4,7 @@
   background-color: #FFFFFF;
 }
 .chat-main {
+    // float: right;
   @include chat-main();
   &__top {
     color:#333333;
@@ -35,7 +36,7 @@
   }
   }
   &__middle {
-    height: calc((100vh - 91px));
+    height: calc(100vh - 185px);
     padding:0px 0px 0px 40px;
   .chat-name {
     display: inline-block;
@@ -57,6 +58,7 @@
   &__under {
       background-color:gray;
       height:90px;
+      position: relative;
           .text-area{
           margin:20px 0px 20px 50px;
           padding:0px;
@@ -83,7 +85,7 @@
             height:40px;
             width:50px;
             position: absolute;
-            top:calc((100% + 35px));
+            top:calc(100% - 55px);
             left:calc((100% - 200px));
           }
   }
