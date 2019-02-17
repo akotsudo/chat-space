@@ -59,14 +59,14 @@
       background-color:gray;
       height:90px;
       position: relative;
-          .text-area{
+          .text_area{
           margin:20px 0px 20px 50px;
           padding:0px;
           height:50px;
-          font-size:16px;
+          font-size:20px;
           color:#434A54;
           box-sizing:border-box;
-          width:calc((100vw - 500px));
+          width:calc(100vw - 500px);
           }
           .send {
             background-color:#38AEF0;
@@ -85,8 +85,8 @@
             height:40px;
             width:50px;
             position: absolute;
-            top:calc(100% - 55px);
-            left:calc((100% - 200px));
+            top:calc(100% - 45px);
+            left:calc(100% - 120px);
           }
   }
 }
