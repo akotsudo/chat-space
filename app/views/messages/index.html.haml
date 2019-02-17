@@ -6,7 +6,9 @@
     .edit
       =link_to "edit", edit_group_path(@group)
     .group-member
-      member name
+      Members:
+      - @group.users.each do |users|
+        = users.name
   .chat-main__middle
     .chat-main__middle--messages
       = render @messages
@@ -18,6 +20,3 @@
         = f.label :image, class:'icon' do
           = fa_icon 'camera', class: 'icon'
           = f.file_field :image, class: 'button'
-
-
-
