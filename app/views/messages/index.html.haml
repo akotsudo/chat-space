@@ -1,18 +1,23 @@
 = render 'shared/side_bar'
 .chat-main
   .chat-main__top
-    %p.group-name グループ名
-    %p.edit Edit
-    %p.group-member Taro
+    .group-name
+      =@group.name
+    .edit
+      =link_to "edit", edit_group_path(@group)
+    .group-member
+      member name
   .chat-main__middle
-    %p.chat-name ichiro
-    %p.chat-time 2019/2/3 17:00
-    %p.chat-comment コメント
+    .chat-main__middle--messages
+      = render @messages
   .chat-main__under
     .form
       = form_for [@group, @message] do |f|
-        = f.text_area :content, class: 'text_area', placeholder: 'type a message'
+        = f.text_field :content, class: 'text_area', placeholder: 'type a message'
+        = f.submit 'Send', class: 'send'
         = f.label :image, class:'icon' do
           = fa_icon 'camera', class: 'icon'
           = f.file_field :image, class: 'button'
-        = f.submit 'Send', class: 'send'
+
+
+
