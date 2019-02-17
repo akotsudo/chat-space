@@ -4,7 +4,7 @@
     .group-name
       =@group.name
     .edit
-      =link_to "edit", edit_group_path(@group)
+      =link_to "edit", edit_group_path(@group), class: 'button'
     .group-member
       Members:
       - @group.users.each do |users|
