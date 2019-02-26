@@ -16,7 +16,8 @@
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'text_area', placeholder: 'type a message'
-        = f.submit 'Send', class: 'send'
         = f.label :image, class:'icon' do
           = fa_icon 'camera', class: 'icon'
           = f.file_field :image, class: 'button'
+        = f.submit 'Send', class: 'send'
+
