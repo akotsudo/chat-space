@@ -42,6 +42,7 @@
   &__middle {
     height: calc(100vh - 185px);
     padding:0px 0px 0px 40px;
+    overflow: scroll;
   .chat-name {
     display: inline-block;
     font-weight: bold;
